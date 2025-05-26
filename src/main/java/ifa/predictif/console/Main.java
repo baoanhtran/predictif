@@ -1,7 +1,10 @@
 package ifa.predictif.console;
 
+import ifa.predictif.dao.JpaUtil;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, Predictif!");
+        JpaUtil.creerFabriquePersistance();
+        JpaUtil.fermerFabriquePersistance();
     }
 }
